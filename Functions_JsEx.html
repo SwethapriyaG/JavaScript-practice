@@ -1,0 +1,76 @@
+<html>
+<head>
+<script type="text/javascript">
+	function f(){
+	  window.alert("Hello");
+	
+	};
+	
+	function f1(){
+	  window.alert("Welcome");
+	
+	};
+	function f2(a,b){
+	  window.alert("Addition of "+a+", "+b+" is: "+(a+b));
+	
+	};
+	function f3(){
+		var x=document.getElementById("first").value;
+	  var y=document.getElementById("second").value;
+	  window.alert("Addition of "+x+", "+y+" is: "+(parseInt(x)+parseInt(y)));
+	
+	};
+	function f4(){
+		var x=document.getElementById("first1").value;
+	  var y=document.getElementById("second1").value;
+	 var c=(parseInt(x)+parseInt(y));
+	 return c;
+	
+	};
+	function f5(){
+	
+		var result = f4();
+		document.getElementById("result").value=result;
+	};
+
+</script>
+
+</head>
+
+<body>
+
+<input type="button" value="Click me" onclick="f()">
+<br>
+<br>
+<input type="button" value="Touch me" onmouseover="f1()">
+<br>
+<br>
+<input type="button" value="Addition" onclick="f2(10,15)">
+<br>
+<br>
+<form name="form1">
+	<input type="text" name="first" id="first">
+	
+	<input type="text" name="second" id="second">
+</form>
+<input type="button" value="Add" onclick="f3()">
+
+<br>
+<br>
+<form name="form2">
+	<input type="text" name="first1" id="first1">
+	
+	<input type="text" name="second1" id="second1">
+</form>
+<input type="button" value="Addition" onmouseover="f5()">
+<br>
+<br>
+<input type="text" name="result" id="result">
+
+
+
+</body>
+
+
+
+</html>

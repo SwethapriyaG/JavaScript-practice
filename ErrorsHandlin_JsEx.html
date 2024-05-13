@@ -1,0 +1,70 @@
+<html>
+<head>
+	<script type="text/javascript">
+		//try identify the exceptions
+		
+		
+		try{
+		document.write("before error line");
+		document.write("<br>");
+		
+		window.alerting("hello welcome");
+		
+		document.write("after error line");
+		
+		}
+		catch(err){
+			window.alert("error is: "+err.message);
+		}
+		
+		finally{
+			document.write("statment in finally");
+			document.write("<br>");
+		
+		}
+		
+		
+		document.write("<br>");
+		document.write("after error line2");
+		
+		
+		try{
+			var input = window.promt("enter a number below 10");
+			
+			var num = parseInt(input);
+			if(num<10){
+			
+				document.write("you entered correct input value: "+num);
+				
+			}
+			if(num>=10)
+				throw new Error("You entered wrong input");
+				
+			}	
+			catch(err){
+				window.alert("error is: "+err.message);			
+		
+			}
+		
+		finally{
+			document.write("<br>");
+			document.write("statment in finally2");
+		
+		}
+		
+		
+	</script>
+
+</head>
+
+<body>
+
+
+
+
+
+</body>
+
+
+
+</html>
